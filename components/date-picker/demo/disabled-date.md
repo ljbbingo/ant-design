@@ -29,6 +29,7 @@ function range(start, end) {
 
 function disabledDate(current) {
   // Can not select days before today and today
+  console.log(current);
   return current && current < moment().endOf('day');
 }
 
