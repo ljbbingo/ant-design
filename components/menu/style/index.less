@@ -262,12 +262,14 @@
     border-bottom: @border-width-base @border-style-base @border-color-split;
     box-shadow: none;
     line-height: 46px;
+    white-space: nowrap;
+    overflow: hidden;
 
     > .@{menu-prefix-cls}-item,
     > .@{menu-prefix-cls}-submenu {
       position: relative;
       top: 1px;
-      float: left;
+      display: inline-block;
       border-bottom: 2px solid transparent;
 
       &:hover,
